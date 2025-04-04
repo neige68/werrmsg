@@ -19,18 +19,10 @@ set(CMAKE_CXX_STANDARD "20")
 
 # /MP: マルチプロセス
 # /W4: 警告レベルを4とする
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP /W4")
-
-# マップファイル生成
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /MAP")
-set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} /MAP")
-
-# ローカルインクルードファイルの場所を追加
-include_directories($ENV{LOCALINCLUDE})
+# /UTF8: ソースおよび実行文字セットを UTF-8 とする
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP /W4 /UTF8")
 
 add_compile_definitions(_CRT_RAND_S NOMINMAX)
-
-#add_subdirectory(neige1)
 
 add_executable(werrmsg werrmsg.cpp pch.cpp)
 

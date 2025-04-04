@@ -1,5 +1,5 @@
-// <werrmsg.cpp>
-char const FILE_TIME_STAMP[] = "Time-stamp: <2025-04-04 11:54:53 neige>";
+ï»¿// <werrmsg.cpp> -*- coding: utf-8-with-signature -*-
+char const FILE_TIME_STAMP[] = "Time-stamp: <2025-04-04 12:13:25 neige>";
 //
 // Project werrmsg
 // Copyright (C) 2025 neige68
@@ -23,7 +23,7 @@ using namespace std;
 
 //------------------------------------------------------------
 
-// GetLastError ‚Ì’l‚ğ‘Î‰‚·‚éƒƒbƒZ[ƒW‚É•ÏŠ·‚·‚é
+// GetLastError ã®å€¤ã‚’å¯¾å¿œã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«å¤‰æ›ã™ã‚‹
 wstring ErrorMessageW(DWORD id, DWORD dwLanguageId = 0)
 {
     wchar_t* retbuf = nullptr;
